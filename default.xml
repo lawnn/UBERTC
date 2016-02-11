@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="bit"
+           fetch="https://bitbucket.org/" />
+
+  <default revision="refs/heads/master"
+           remote="github"
+           sync-c="true"
+           sync-j="10" />
+
+   <project path="toolchains" name="lawnn/UBERTC" remote="github" revision="master" />
+   <project path="arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bit" revision="master" />
+   <project path="arm-eabi-4.9" name="UBERTC/arm-eabi-4.9" remote="bit" revision="master" />
+
+</manifest>
